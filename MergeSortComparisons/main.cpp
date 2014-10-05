@@ -7,12 +7,36 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int size, num, count = 0;
+    cin >> size;
+    
+    // cases array
+    while (size) {
+        
+        // declaring array
+        int array[size];
+        
+        // introducing data to array
+        while (count < size) {
+            cin >> num;
+            array[count] = num;
+            count++;
+        }
+        
+        // insert mergesort code
+        // here
+        
+        // variable gets reset
+        count = 0;
+        
+        // user inputs new array size
+        cin >> size;
+    }
     return 0;
 }
 
