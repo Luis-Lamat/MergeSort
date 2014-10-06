@@ -35,16 +35,16 @@ For each case, display a line with the minimun number of of adjacent exchanging 
 Sample Input
 =============
 
-5
-9 1 0 5 4
-
-3
-1 2 3
-
-0
+    5
+    9 1 0 5 4
+    
+    3
+    1 2 3
+    
+    0
 
 Sample Output
 ===============
 
-6
-0
+    6
+    0
