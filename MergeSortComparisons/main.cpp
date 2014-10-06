@@ -9,6 +9,10 @@
 #include <iostream>
 using namespace std;
 
+
+/* GLOBAL VARIABLES */
+int exchanges = 0;
+
 /*
  * (void) Join
  *
@@ -19,7 +23,7 @@ using namespace std;
 void Join(int *a, int start, int mid, int end){
     
     // declaring variables
-    int i = start, j = mid+1, k = start;
+    int i = start, j = mid+1, k = start, swaps = 0;
     int aux[end+1];
     
     // make the swaps between both arrays
@@ -30,6 +34,7 @@ void Join(int *a, int start, int mid, int end){
         } else {
             aux[k] = a[j];
             j++;
+            swaps += mid - i + 1;
         }
         k++;
     }
@@ -53,6 +58,9 @@ void Join(int *a, int start, int mid, int end){
     for (int m = start; m <= end; m++) {
         a[m] = aux[m];
     }
+    
+    
+    exchanges += swaps;
 }
 
 
@@ -101,7 +109,10 @@ int main(int argc, const char * argv[])
             cout << array[i] << " ";
         } cout << endl;
         
-        // variable gets reset
+        cout << "Comparisons: " << exchanges << endl;
+        
+        // variables get reset
+        exchanges = 0;
         count = 0;
         
         // user inputs new array size
