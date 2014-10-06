@@ -2,7 +2,10 @@
 //  main.cpp
 //  MergeSortComparisons
 //
-//  Created by Luis Alberto Lamadrid on 10/5/14.
+//  Created by Luis Alberto Lamadrid &
+//             Paulina Escalante Campbell
+//             on 10/3/14.
+//
 //  Copyright (c) 2014 Luis Alberto Lamadrid. All rights reserved.
 //
 
@@ -104,12 +107,13 @@ int main(int argc, const char * argv[])
         // mergesorting the array
         MergeSort(array, 0, size-1);
         
-        // printing it afterwards
+        /*  // print the sorted array afterwards
         for (int i = 0; i < size; i++) {
             cout << array[i] << " ";
         } cout << endl;
+        */
         
-        cout << "Comparisons: " << exchanges << endl;
+        cout << exchanges << endl;
         
         // variables get reset
         exchanges = 0;
