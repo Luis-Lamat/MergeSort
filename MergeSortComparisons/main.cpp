@@ -9,6 +9,13 @@
 #include <iostream>
 using namespace std;
 
+/*
+ * (void) Join
+ *
+ * Method to join the values of two divisions of an array
+ * into an auxiliar one, but in order.
+ *
+ */
 void Join(int *a, int start, int mid, int end){
     
     // declaring variables
@@ -48,6 +55,15 @@ void Join(int *a, int start, int mid, int end){
     }
 }
 
+
+/*
+ * (void) MergeSort
+ *
+ * Method to call the Merge Sort recursively. First makes the
+ * division of the indexes, and then joins the separate arrays
+ * with the Join method.
+ *
+ */
 void MergeSort (int *a, int start, int end){
     if (start < end) {
         int mid = (start + end) / 2;
@@ -57,6 +73,7 @@ void MergeSort (int *a, int start, int end){
     }
 }
 
+/* -----------------------------  MAIN FUNCTION ----------------------------- */
 int main(int argc, const char * argv[])
 {
 
@@ -76,14 +93,13 @@ int main(int argc, const char * argv[])
             count++;
         }
         
-        // insert mergesort code
-        // here
+        // mergesorting the array
         MergeSort(array, 0, size-1);
         
+        // printing it afterwards
         for (int i = 0; i < size; i++) {
             cout << array[i] << " ";
-        }
-        cout << endl;
+        } cout << endl;
         
         // variable gets reset
         count = 0;
