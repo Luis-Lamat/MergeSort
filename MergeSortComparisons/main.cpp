@@ -9,6 +9,54 @@
 #include <iostream>
 using namespace std;
 
+void Join(int *a, int start, int mid, int end){
+    
+    // declaring variables
+    int i = start, j = mid+1, k = start;
+    int aux[end+1];
+    
+    // make the swaps between both arrays
+	 while ((i <= mid) && (j <= end)) {
+        if (a[i] < a[j]) {
+            aux[k] = a[i];
+            i++;
+        } else {
+            aux[k] = a[j];
+            j++;
+        }
+        k++;
+    }
+    
+    // checks if one of both arrays
+    // is empty so passes the other values directly
+    if (i > mid) {
+        for (int x = k; x <= end ; x++) {
+            aux[x] = a[j];
+            j++;
+        }
+    }
+    else {
+        for (int x = k; x <= end ; x++) {
+            aux[x] = a[i];
+            i++;
+        }
+    }
+    
+    // copies the auxiliar array into the original array
+    for (int m = start; m <= end; m++) {
+        a[m] = aux[m];
+    }
+}
+
+void MergeSort (int *a, int start, int end){
+    if (start < end) {
+        int mid = (start + end) / 2;
+        MergeSort(a, start, mid);
+        MergeSort(a, mid + 1, end);
+        Join(a, start, mid, end);
+    }
+}
+
 int main(int argc, const char * argv[])
 {
 
@@ -30,6 +78,12 @@ int main(int argc, const char * argv[])
         
         // insert mergesort code
         // here
+        MergeSort(array, 0, size-1);
+        
+        for (int i = 0; i < size; i++) {
+            cout << array[i] << " ";
+        }
+        cout << endl;
         
         // variable gets reset
         count = 0;
