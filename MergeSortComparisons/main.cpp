@@ -2,8 +2,8 @@
 //  main.cpp
 //  MergeSortComparisons
 //
-//  Created by Luis Alberto Lamadrid &
-//             Paulina Escalante Campbell
+//  Created by Luis Alberto Lamadrid (A01191158) &
+//             Paulina Escalante Campbell (A01191962)
 //             on 10/3/14.
 //
 //  Copyright (c) 2014 Luis Alberto Lamadrid. All rights reserved.

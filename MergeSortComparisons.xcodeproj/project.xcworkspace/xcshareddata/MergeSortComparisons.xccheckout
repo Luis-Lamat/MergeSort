@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3207110D-7840-4554-8274-47264DD6C92A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MergeSortComparisons</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>50D7D69C-4749-419D-BEB8-D5041A449C88</key>
+		<string>https://github.com/Luis-Lamat/MergeSort.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MergeSortComparisons.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>50D7D69C-4749-419D-BEB8-D5041A449C88</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Luis-Lamat/MergeSort.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>50D7D69C-4749-419D-BEB8-D5041A449C88</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>50D7D69C-4749-419D-BEB8-D5041A449C88</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MergeSortComparisons</string>
+		</dict>
+	</array>
+</dict>
+</plist>
